@@ -1,0 +1,314 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=STIX+Two+Text&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+ 
+ 
+ *{
+    
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.head{
+
+position: absolute;
+text-align: left;
+padding-top: 1.5rem;
+
+font-family: 'Playfair Display', serif;
+}
+
+
+body {
+   background: white;
+}
+
+header{
+    margin: 0;
+    top: 0;left: 0;
+    width: 100%;
+    padding: -2rem 5%;
+
+}
+
+.sidebar {
+
+    float: left;
+    width: 25rem;
+    text-align: left;
+    margin-top: 12rem;
+
+
+}
+
+.sidebar a {
+text-transform: capitalize;
+    font-size: 1.7rem;
+    margin-left: 6rem;
+    display: block;
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 2.5rem;
+}
+
+
+
+section {
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  
+    padding: 0 15%;
+   
+}
+.head h1{
+    position: absolute;
+    color: black;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    margin:0rem ;
+    padding: 1.1rem 0.5rem;
+}
+.head{
+
+position: relative;
+
+padding: 1rem;
+left:7rem
+}
+
+div {
+    padding: 0;
+    margin: 0;
+}
+.cart img{
+    padding: 2rem;
+  margin: 0;
+    justify-content: left;
+    height: 10rem;
+  display: none;
+}
+
+.menu0 img{
+  
+    padding: 2rem;
+    margin: 0;
+    height: 9rem;
+    display: none;
+}
+
+.cont h1{
+    font-family: 'Playfair Display', serif; 
+  position: relative;
+    left: 14rem;
+    font-weight: bold;
+   padding-top: 12rem;
+    font-size: 6.6rem;
+    
+
+}
+
+
+.container article{
+
+    width:28rem;
+    padding: 0.6rem;
+    border-radius: 10%;
+ 
+
+}
+
+img {
+    height:16rem;
+    border-radius: 100%;
+    margin-bottom: 1.8rem;
+}
+
+
+.grid{
+    margin:10rem;
+    padding-left: 11rem;
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap:3rem;
+    align-items: center;
+
+    
+
+}
+
+.grid > article{
+    background: white;
+    border: none;
+    box-shadow: 0.2rem 0.2rem 0.6rem 0rem rgba(0,0,0,0.3);
+    border-radius: 2rem;
+    text-align: center;
+    width: 21rem;
+    box-shadow: .2rem .3rem 1.8rem gray;
+}
+
+.grid > article img{
+  
+    width :85%;
+    padding: 2rem;
+margin-top: 2rem;
+}
+
+.text{
+margin-bottom: 1rem;
+    padding: 0 1rem 0.7rem;
+    
+}
+
+h3{
+    font-size: 1.8rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+.btn{
+    position: absolute;
+    left:9%;
+    top: 64rem;
+     display: inline-block;
+    margin-top: 1rem 2rem;
+     padding:1rem 4.5rem;
+    border-radius: 8rem; 
+     background:#f14147; 
+    font-size: 1.7rem;
+    color:white;  
+    text-decoration: none;
+    
+}
+.Rsection h4{
+
+    box-sizing: border-box;
+    position: absolute;
+    text-align: left; top: 10rem;
+    left: 100rem;
+   font-family: "Poppins", sans-serif;
+   font-size: 1.5rem;
+   width: 32rem;
+   border: 2rem ;
+   padding: 5rem;
+   margin: 1rem;
+   color:rgb(102, 102, 102);
+
+
+}
+.Rsection h4::after{
+    content: '';
+    width: 8rem;
+    height: 0.3rem;
+    background: red;
+    position: absolute ;
+    bottom:1.9rem;
+    right:19rem
+}
+
+
+@media  screen and (max-width :768px) {
+   .cont  h1{
+
+position: flex;
+font-size: 5rem;
+text-align: center;
+padding: 0.2rem;
+margin: auto;
+    } 
+
+     nav{
+        position: relative;
+    }
+    .sidebar{
+    
+         background: white;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+    } 
+
+
+@media (max-width:768px) {
+    html{
+        font-size:45%;
+    }
+
+    .grid{  
+      
+        position:relative; 
+        grid-template-columns: repeat(2,2fr);
+        display: grid;
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        margin: 1rem;
+        ;
+    
+    }
+    .cut{
+        display: none;
+    }
+
+    .qq{
+        display: none;
+    }
+
+    .menu0 img{
+        display: flex;;
+    }
+    .cart img{
+        display: flex;
+    }
+}
+@media (max-width : 768px) {
+   .head h1{
+       position: relative;
+       text-align:center; 
+       width: 100%;
+       height: auto;
+      
+   } 
+   .lp{
+       display: none;
+   }
+}
+
+@media (max-width : 768px) {
+.Rsection h4{
+   display: relative;
+   align-items: center;
+  padding-inline-end: 1rem;
+  top: 80rem;left:0;
+  width: auto;
+  height: auto;
+}
+.Rsection h4::after{
+    display: relative;
+    align-items: center;
+   padding-inline-end: 1rem;
+   top: 10rem;left:3.5em;
+
+}
+
+
+.btn{
+    position: absolute;
+display: none;   
+}
+
+ .cont h1{
+      position: relative;
+  text-align:start;
+  width: 100%;
+  height: auto;
+    }
+}
